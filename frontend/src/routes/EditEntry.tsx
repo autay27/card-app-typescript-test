@@ -24,7 +24,7 @@ export default function EditEntry() {
     updateEntry(id as string, newEntry);
   };
   return (
-    <section className="flex justify-center flex-col w-fit ml-auto mr-auto mt-10 gap-5 bg-gray-300 p-8 rounded-md">
+    <section className="flex justify-center flex-col w-fit ml-auto mr-auto mt-10 gap-5 bg-gray-300 dark:bg-gray-700 dark:text-white p-8 rounded-md">
       <input
         className="p-3 rounded-md"
         type="text"
