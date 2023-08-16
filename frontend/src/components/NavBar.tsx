@@ -25,7 +25,7 @@ export default function NavBar() {
 function toggle() {
   console.log(localStorage.darkTheme);
 
-  if (localStorage.theme === "light") {
+  if (localStorage.theme === "light" || !localStorage.theme) {
     localStorage.setItem("theme", "dark");
     document.documentElement.classList.add("dark");
   } else {

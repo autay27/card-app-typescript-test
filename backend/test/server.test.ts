@@ -83,14 +83,13 @@ describe("server test", () => {
       created_at: new Date("2023-08-16T19:36:43.069Z"),
     };
 
-
     const response = await server.inject({
       method: "POST",
       url: "/create/",
       payload: invalidEntry,
     });
 
-    console.log(response.statusMessage)
+    console.log(response.statusMessage);
     expect(response.statusCode).toEqual(500);
   });
 
